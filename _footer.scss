@@ -1,0 +1,14 @@
+// footer
+footer {
+  background-color: #233f51;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-right {
+      margin-right: 80px;
+  }
+}

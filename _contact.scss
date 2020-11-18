@@ -1,0 +1,51 @@
+// contact
+.contact {
+  text-align: center;
+  background-color: #ebf4f5;
+  margin-top: 50px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .form {
+    margin: 50px 0 40px;
+  }
+
+  button {
+    background-color: #1dace0;
+    color: #fff;
+    border:3px solid #1dace0;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+  
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+
+  .name {
+    margin-bottom: 20px;
+  }
+
+  .name, .email {
+    height: 50px;
+    width: 400px;
+    font-size: 16px;
+    box-sizing: border-box;
+  
+  }
+
+  &-left{
+      margin-right: 50px;
+  }
+}
+
+
+.inquiry {
+    margin-right: 50px;
+}
