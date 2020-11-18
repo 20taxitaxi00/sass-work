@@ -1,0 +1,29 @@
+// 
+$size: 300px;
+
+.img-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+     li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 60px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+         img{
+            height: $size;
+            width: $size;
+        }
+
+         span{
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    }
+}

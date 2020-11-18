@@ -1,0 +1,35 @@
+div{
+    display: block;
+    margin: 0 auto;
+
+    h2{
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+
+    button{
+        display: block;
+        margin: 0 auto;
+        height: 160px;
+        width: 160px;
+    }
+}
+
+$size: 200px;
+
+.div{
+    display: block;
+    margin: 0 auto;
+    
+    &__h2{
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    &__button{
+        display: block;
+        margin: 0 auto;
+        height: $size;
+        width: $size;
+    }
+}
