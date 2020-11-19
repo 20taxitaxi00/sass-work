@@ -1,0 +1,68 @@
+@mixin hover($red, $green, $blue){
+  background-color: rgb($red, $green, $blue);
+}
+
+.welcome {
+    height: 500px;
+    background-image: url(../img/background1.jpg);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  ​
+  .title{
+    font-size: 64px;
+  }
+  ​
+  .guideline{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top:50px;
+
+    li{
+        margin-top: 16px;
+    }
+  }
+  ​
+   .btn-group{
+    margin-top: 60px;
+  }
+  ​
+  .btn {
+    height: 55px;
+    width: 170px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 120px;
+
+    &:first-child{
+        margin-left: 0;
+    }
+
+  }
+   ​
+  .register{
+    background-color: rgba(29,172,224, .5);
+    border: 3px solid rgba(29,172,224, .3);
+
+    &:hover{
+        // background-color: rgb(29,172,224);
+        @include hover(29,172,224);
+    }
+
+  }
+  ​
+  .login{
+    background-color: rgba(236,227,35, .5);
+    border: 3px solid rgba(236,227,35, .3);
+
+    &:hover{
+        // background-color: rgb(236,227,35);
+        @include hover(236,227,35);
+      }
+      
+  }

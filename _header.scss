@@ -1,4 +1,49 @@
-header{
+$top: 70px;
+
+header {
+    background-color: #1dace0;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  ​
+  .fixed{
+    position: fixed;
     width: 100%;
-    height: 60px;
-}
+    margin-top:-$top;
+  }
+  ​
+  #margin-for-fixed{
+    margin-top:$top;
+  }
+  ​
+  .icon {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+
+    img {
+        height: 60px;
+      }
+    ​.name strong{
+        color: #eae51f;
+    }
+  }
+  ​
+  
+
+  ​
+  .header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+
+    li:first-child{
+        margin-right: 20px;
+    }
+
+
+    
+  }
