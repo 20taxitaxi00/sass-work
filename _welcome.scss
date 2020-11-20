@@ -1,3 +1,9 @@
+// mixin
+@mixin btncolor($red, $green, $blue, $a){
+    background-color: rgba($red, $green, $blue, $a);
+    border: 3px solid rgba($red, $green, $blue, $a - 0.2);
+}
+
 @mixin hover($red, $green, $blue){
   background-color: rgb($red, $green, $blue);
 }
@@ -44,25 +50,37 @@
     }
 
   }
-   ​
+  // register変数
+  $r: 29;
+  $g: 172;
+  $b: 224;
+  $a: 0.5;​
+
   .register{
-    background-color: rgba(29,172,224, .5);
-    border: 3px solid rgba(29,172,224, .3);
+    // background-color: rgba($r,$g,$b, $a);
+    // border: 3px solid rgba($r,$g,$b, .3);
+    @include btncolor($r,$g,$b, $a )
 
     &:hover{
         // background-color: rgb(29,172,224);
-        @include hover(29,172,224);
-    }
+        @include hover($r,$g,$b);
+      }
 
   }
-  ​
+  
+  // login変数​
+  $r: 236;
+  $g: 227;
+  $b: 35;
+
   .login{
-    background-color: rgba(236,227,35, .5);
-    border: 3px solid rgba(236,227,35, .3);
+    // background-color: rgba(236,227,35, .5);
+    // border: 3px solid rgba(236,227,35, .3);
+    @include btncolor($r,$g,$b, $a)
 
     &:hover{
         // background-color: rgb(236,227,35);
-        @include hover(236,227,35);
+        @include hover($r,$g,$b);
       }
       
   }
