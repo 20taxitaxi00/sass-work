@@ -1,0 +1,56 @@
+// 全体の設定
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+
+// 青色ゾーン
+.row {
+    display: flex;
+    width: 100%;
+    height: 200px;
+
+    // 黄色ゾーン
+    &_second {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+// column
+$col2: 100% / 2;
+$col3: 100% / 3;
+$col4: 100% / 4;
+$col5: 100% / 5;
+$col6: 100% / 6;
+
+.coldiv5 {
+    width: $col5;
+    height: 100%;
+
+    &_second {
+        width: 100%;
+        height: 20%;
+    }
+}
+
+// 輝度を変える
+// ベースの色
+$base-color: #008dbd;
+$second-base: #f4e511;
+
+@for $i from 1 through 5 {
+    .box-#{$i} {
+        background-color: lighten($base-color, 8% * $i );
+    }
+}
+
+@for $j from 6 through 10 {
+    .box-#{$j} {
+        background-color: darken($second-base, 8% * ($j - 5) );
+    }
+}
